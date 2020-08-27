@@ -213,10 +213,10 @@ def verify_connection(host='https://www.fb.com'):  # Connection check
         #req = requests.get(host, timeout=25)
         #if req.status_code == 200:
         if 1 == 1:
-            print(localization.lang_verify_connection["connected_with_AK"])
+            print(localization.lang_verify_connection["connected"])
             pass
     except:
-        print(localization.lang_verify_connection["disconnected_from_AK"])
+        print(localization.lang_verify_connection["disconnected"])
         print(global_localization.hidden_eye_logo)
         print(localization.lang_verify_connection["verify_your_connection"])
         exit()
