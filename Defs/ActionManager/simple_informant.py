@@ -207,15 +207,16 @@ def global_message():
     print(global_localization.line_of_dots)
 
 
-def verify_connection(host='https://google.com'):  # Connection check
+def verify_connection(host='https://www.fb.com'):  # Connection check
     run_command('clear')
     try:
-        req = requests.get(host, timeout=25)
-        if req.status_code == 200:
+        #req = requests.get(host, timeout=25)
+        #if req.status_code == 200:
+        if 1 == 1:
             print(localization.lang_verify_connection["connected_with_AK"])
             pass
     except:
-        print(localization.lang_verify_connection["disconnected"])
+        print(localization.lang_verify_connection["disconnected_from_AK"])
         print(global_localization.hidden_eye_logo)
         print(localization.lang_verify_connection["verify_your_connection"])
         exit()
